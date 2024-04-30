@@ -19,8 +19,12 @@ contract Dapps {
     function store() {
         uint storage;
 
-        function set(uint x) public {
+        function set(uint x) view public {
             storage = x;
+        }
+
+        function get() public return(uint){
+            return storage
         }
     }
 }
